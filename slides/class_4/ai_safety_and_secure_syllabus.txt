@@ -1,0 +1,194 @@
+Overview
+This course provides a comprehensive introduction to the security challenges of modern AI systems. We examine how vulnerabilities can be introduced during sys- tem architecture design, model development, training, and deployment and how bad actors can exploit these vulnerabilities via prompt injection, adversarial inputs, data poisoning, and model extraction. Students will also learn about common AI misapplications and the risks introduced by multi-agent collaboration. Alongside these threats, students will examine emerging defenses such as secure architec- tures, verifiable training, fingerprinting, and prompt-level protections, gaining a deeper understanding of how to assess and improve AI system security. By analyz- ing real-world breaches and misapplications and engaging in hands-on exercises using open-source AI threat identification and remediation libraries, students will gain valuable insights into the limitations of current AI systems and emerge from the course equipped with the knowledge and skills necessary to build more secure, robust, and trustworthy AI applications.
+Material
+Required Texts (both available for free online)
+	•	Daniel Jurafsky and James H. Martin, 2026:Speech and Language Processing: An Introduction to Natural Language Processing, Computational Linguistics, and Speech Recognition, with Language Models 
+	•	HaggaiRoitman,2026:TheHitchhiker’sGuidetoAgenticAI:FromFoundations to Systems  Other  Any required papers and book chapters will be provided in the syllabus  Coursework  Students will complete 5 programming assignments, each related to some aspect of the lecture and reading material. The programming assignments should be com- pleted as Jupyter notebooks and uploaded to Canvas.  The final group project can be completed singly or as a group (max 5 members). The project should consist of an application that implements one or more of the concepts described in class. The application will be demoed on the last day of class as a 5-10 minute presentation. 
+	•	10% of the student’s grade will be determined by attendance and participa- tion in class 
+	•	70% of the student’s grade will be determined by 5 take-home assignments. 
+	•	20% of the student’s grade will be determined by a final group project. 
+￼ ￼ ￼ ￼ ￼ ￼ ￼ ￼ ￼
+AIM 5014 Special Topics:
+AI Safety &
+Security
+Katz School of Science & Health, MS Program in
+Artificial Intelligence Fall 2026
+Instructor Info
+g Adam Faulkner
+@ adam.faulkner@yu.edu
+Course Info
+ Wednesdays U 03:15PM-05:15PM
+1⁄2 205 Lexington Avenue 401
+￼ ￼
+Class Schedule
+MODULE 1: Introduction to Large Language Models and Agentic AI
+￼ ￼ ￼
+Sept 2
+Sept 9
+Sept 16
+Course Introduction & Review of Deep Learning • Overview of AI Safety • Mitre taxonomy • Neural Networks
+• Deep Learning Lecture notebook: TBD
+Transformers & Large Language Models • Attention • Transformers • Large Language Models
+• Causal language modeling
+Aligning LLMs to Human Preferences • Reinforcement Learning from Human Feedback • Instruction Tuning • Direct Preference Optimization
+Assignment 1 Due
+Required Reading/Viewing • Amodei et al., 2016: Concrete Problems in AI Safety • Goodfellow, Bengio, & Courville: Introduction • Jurafsky & Martin Chap 6: Neural Networks
+Optional Reading/Viewing • Mitre Atlas • But what is a neural network? • Gradient descent, how neural networks learn • Backpropagation, intuitively.
+Required Reading/Viewing • Jurafsky & Martin Chapter 7: Transformers & Pretrain-
+ing Optional Reading/Viewing
+• Transformer Explainer • Causal language modeling (HuggingFace tutorial) • Intro to Large Language Models: Karpathy, 2024 • Attention Is All You Need: Vaswani et al., 2017 • The Annotated Transformer
+Required Reading/Viewing • Jurafsky & Martin Chapter 8: Post-training • Ouyang et al., 2022: Training language models to follow
+instructions with human feedback • Rafailov et al., 2023: Direct Preference Optimization:
+Your Language Model is Secretly a Reward Model • Direct Preference Optimization (DPO): A Simplified Ex-
+planation Optional Reading/Viewing
+• Sharma et al., 2024: Towards Understanding Syco- phancy in Language Models
+	•	Ivison et al., 2024: Unpacking DPO and PPO: Disentan- gling Best Practices for Learning from Preference Feed- back 
+	•	Wen et al., 2024: Language Models Learn to Mislead Humans via RLHF 
+	•	Qi et al., 2025: Safety Alignment Should be Made More Than Just a Few Tokens Deep  Required Reading/Viewing • Jurafsky & Martin Chap. 11: Information Retrieval and  Retrieval-Augmented Generation • Roitman Chap 15: Introduction to Agentic AI • Roitman Chap 17: Agentic Memory Systems, sec 17.1-  17.3 • Roitman Chap 18: Agent Harness – Context Manage-  ment and Orchestration, sec 18.1-18.5 • Roitman Chap 21: Agent-to-Agent Communication  (A2A), sec 21.1-21.4 Optional Reading/Viewing  • HuggingFace Agents course unit 1: Introduction • Roitman Chap 20: Agent Design Patterns • Roitman Chap 21: Agentic Environments and Bench- 
+￼ ￼ ￼ ￼ ￼ ￼ ￼ ￼ ￼ ￼
+Sept 23
+Agentic AI • Retrieval Augmented Generation • Agentic AI
+– Memory management – Context management and orchestration – Multi-agent architectures
+￼ ￼
+marks
+￼
+MODULE 2: Intepretability & Privacy Preservation
+￼ ￼
+Sept 30
+Interpretability • Circuits • Mechanistic interpretability • Sparse autoencoders • Training data provenance
+Required Reading/Viewing • Rauker, Ho, Casper et al., 2023: SoK: Toward Transpar-
+ent AI: A Survey on Interpreting Inner Structures • Bereska & Gavves, 2024: Mechanistic Interpretability
+for AI Safety - A Review • Olah et al., 2020: Zoom In: An Introduction to Circuits • Cunningham et al., 2024: Sparse autoencoders find
+highly interpretable features in language models • Grosse et al., 2023: Studying Large Language Model
+Generalization with Influence Functions Optional Reading/Viewing
+• Billsetal.,2023:Languagemodelscanexplainneurons in language models
+	•	Li et al., 2025: Training Language Models to Explain Their Own Computations 
+	•	Turner et al., 2023: Steering Language Models With Ac- tivation Engineering 
+	•	Turpin et al., 2023: Language Models Don’t Always Say What They Think: Unfaithful Explanations 
+	•	Bricken et al., 2023: Towards Monosemanticity: De- composing Language Models With Dictionary Learning 
+	•	LanguageModelsRepresentSpaceandTime–Gournee  & Tegmark, 2024 
+	•	Turner et al., 2023: Activation addition: Steering lan-  guage models without optimization  Required Reading/Viewing • Du et al. 2025: Can Differentially Private Fine-Tuning  LLMs Protect Against Privacy Attacks? • Du et al. 2026: Differentially Private Subspace Fine-  Tuning for Large Language Models. • Yao et al. 2024: Federated Large Language Models:  Current Progress and Future Directions. • Morris et al. 2023: Text Embeddings Reveal (Almost)  As Much As Text: Vec2Text Inversion Attacks. • Zhang et al. 2026: Towards Secure Retrieval- Augmented Generation: Latent Space Exploitation and  Embedding Reversal Defenses. • Gill et al., 2026: BinaryShield: Cross-Service Threat In-  telligence in LLM Services using Privacy-Preserving Fin-  gerprints Optional Reading/Viewing  • Google Research 2025: Fine-tuning LLMs with user- level differential privacy 
+	•	Zhao et al. 2023: Differentially Private Low-Rank Adap- tation of Large Language Model Using Federated Learn- ing. 
+	•	Huang et al. 2024: Privacy in Fine-Tuning Large Lan- guage Models: Attacks, Defenses, and Future Direc- tions. 
+	•	Tsai et al. 2024: Differentially Private Fine-Tuning of Diffusion Models via LoRA. 
+	•	Song et al. 2020: Information Leakage in Embedding Models: Inversion Attacks and Adversarial Defenses. 
+	•	Security of AI Embeddings Explained 
+￼ ￼ ￼ ￼
+Oct 7
+Privacy-Preservation Techniques • Differential privacy for LLMs • Federated Learning with LLMs • LoRA-based finetuning for privacy • Privacy-preserving data transformation • Embedding reversal attacks
+• Embedding-reversal-resistant techniques
+Assignment 2 Due
+￼ ￼ ￼ ￼
+MODULE 3: Attacks
+￼
+Oct 14
+LLM Prompt Injection (Direct & Indirect) • Direct Prompt Injection / Jailbreaking: Adver- saries craft inputs directly targeting the LLM to bypass safety guardrails and override system in-
+structions.
+	•	Indirect Prompt Injection: Adversaries embed in-  structions into unstructured data (e.g., websites, emails) that an AI agent or RAG system ingests during normal processing. 
+	•	Prompt-Based Data Exfiltration: Manipulating an LLM to covertly embed sensitive session data or credentials into external queries, markdown im- ages, or outbound links. 
+	•	Multimodal Prompt Injection: Hiding malicious text prompts inside images, audio files, or PDF documents analyzed by vision/multimodal mod- els. 
+Required Reading/Viewing • EchoLeak: Zero-Click Prompt Injection in M365 Copilot
+(Zenity Labs) • Bing Chat: Data Exfiltration Exploit Explained(Embrace
+The Red) • Hacking Google Bard - From Prompt Injection to Data
+Exfiltration (Embrace The Red) • Universal and Transferable Adversarial Attacks on
+Aligned Language Models (Zou et al., 2023) • Prompt Injection Attacks Against Vision-Language Models in Oncology (Clusmann et al., Nature Commu-
+nications 2025) • Agent Smith: A Single Image Can Jailbreak One Million
+Multimodal LLM Agents (Gu et al., 2024) Optional Reading/Viewing
+• Hubinger et al., 2024: Sleeper Agents: Training Decep- tive LLMs That Persist Through Safety Training.
+	•	Wei et al., 2023: Jailbroken: How Does LLM Safety Training Fail? 
+	•	JailbreakBench: An Open Robustness Benchmark for Jailbreaking Large Language Models (Chao et al., 2024) 
+	•	TreeofAttacks:JailbreakingBlack-BoxLargeLanguage  Models Automatically (Mehrotra et al., 2024) 
+	•	Not What You’ve Signed Up For: Compromising Real-World LLM-Integrated Applications with Indirect  Prompt Injection (Greshake et al., 2023) 
+	•	TopicAttack: An Indirect Prompt Injection Attack via  Topic Transition (Chen et al., EMNLP 2025) 
+	•	Abusing Images and Audio for Indirect Prompt Injec-  tion in Multimodal LLMs (Bagdasaryan et al., 2023) 
+	•	Visual Adversarial Examples Jailbreak Large Vision-  Language Models (Qi et al., 2023)  Required Reading/Viewing • Hacking Clawdbot and Eating Lobster Souls • Eating lobster souls Part II: the supply chain • PyTorch Dependency Confusion Attack: Compromised  PyTorch-Nightly Dependency (PyTorch Blog) • AI Package Hallucination / Slopsquatting: Slopsquat- ting: When AI Agents Hallucinate Malicious Packages  (Endor Labs) Optional Reading/Viewing  • Supply-Chain Poisoning Attacks Against LLM Coding Agent Skill Ecosystems (arXiv 2026)  • Asleep at the Keyboard? Assessing the Security of GitHub Copilot’s Code Contributions (Pearce et al., 2021)  • We Have a Package for You! A Large Scale Study on Package Hallucination in LLMs (arxiv 2024)  • Slopsquatting: Exploiting Package Hallucinations in AI- Assisted Workflows (2025)  • Poisoning Web-Scale Training Datasets is Practical (Carlini et al., 2024)  • Malicious Models on Hugging Face: Silent Trojanized Weights (ReversingLabs, 2024) 
+￼ ￼ ￼
+Oct 21
+AI Supply Chain Compromise & Poisoned Tools • Poisoned AI Agent Tools / Skills: Publishing ma- licious agent extensions or tools on public reg- istries containing hidden prompt injections or
+system commands.
+	•	Package Hallucination Exploitation (Slopsquat-  ting): Registering malicious software packages under fake package names commonly halluci- nated by coding assistants. 
+	•	Compromised ML Dependencies: Inserting back- doors or malicious code into open-source ma- chine learning libraries or software packages. 
+	•	Trojanized Pre-Trained Models: Distributing base models that function normally on standard eval- uations but exhibit unintended or malicious be- havior under specific trigger conditions. 
+￼ ￼ ￼
+￼
+Oct 28
+AI Infrastructure & Compute Exploitation • Unauthenticated AI Compute Hijacking: Exploit- ing exposed distributed execution clusters (e.g., Ray, vLLM) to run unauthorized workloads or
+mine cryptocurrency.
+	•	Exposed Model Registries & API Keys: Scanning  public registries, vector databases, or storage buckets for exposed API credentials or open model management interfaces. 
+	•	Orchestration Framework Exploitation: Targeting vulnerabilities in tools like LangChain, LlamaIn- dex, or Kubeflow to achieve local or remote arbi- trary code execution. 
+	•	Vector Database Exploitation: Unauthorized ma- nipulation or exfiltration of embeddings and metadata stored in vector search engines due to permissive access control policies.  Assignment 3 Due  Model Inversion & IP Theft (Model Extraction) • Black-Box Model Theft via API Queries: Querying an API with carefully crafted inputs to reverse- engineer model parameters and create a dupli-  cate model. 
+	•	Training Data Extraction: Reconstructing verba-  tim memorized training samples (including PII, passwords, or copyrighted text) through auto- mated generation prompts. 
+	•	System Prompt & Meta-Prompt Extraction: Ex- tracting hidden system instructions, guardrail logic, or fine-tuning guidelines by tricking the LLM into repeating its initial prompt context.  AI Agent Misuse & Unauthorized Agency • Privilege Escalation via Tool Binding: Exploiting over-privileged tools assigned to an AI agent to read/write files or execute commands beyond  user authorization. 
+	•	Unauthorized Web Browsing & API Actions: Trick-  ing an active web agent into performing actions on behalf of a logged-in user, such as sending emails or transferring funds. 
+	•	AI Agent Configuration Modification: Altering sys- temic instructions or tool parameter definitions stored in agent state configs to maintain persis- tence or subvert safety rules.  Assignment 4 Due 
+Required Reading/Viewing • ShadowRay: First Known Attack Campaign Targeting AI
+Workloads Actively Exploited In The Wild (Oligo Secu-
+rity) • LLMjacking evolved: Attackers are using stolen AI com-
+pute to build offensive agentic tools • Silent Sabotage: Weaponizing AI Models in Exposed
+Containers (Trend Micro) • Truffle Security 2025: 12,000 Live API Keys and Pass-
+words Exposed in Public Web Datasets Ingested by
+LLMs. Optional Reading/Viewing
+• RedHatSecurity2025:LangChainSerializationVulner- ability Allowing Arbitrary Code Execution (CVE-2025- 68664).
+• Gourion et al. 2025: ShadowMQ: How Code Reuse Spread Critical Vulnerabilities Across the AI Ecosystem. • OWASP GenAI Committee 2025: LLM08: Vector and
+Embedding Weaknesses in RAG Architectures.
+Required Reading/Viewing • Nasr et al. 2023: Scalable Extraction of Training Data
+from Production Language Models. • Carlini et al. 2024: Stealing Part of a Production Model • LouisShark et al. 2024: Collection of Extracted System
+Prompts and Meta-Prompts. Optional Reading/Viewing
+SentinelOne: Model Inversion Attacks: Risks and De-
+fenses Explained (blog post) • Geiping et al. 2024:Coercing LLMs to do and reveal (al-
+most) anything. • Chen et al. 2025: Exploiting Prompt-Induced Confi-
+dence for Black-Box Attacks on LLMs.
+Required Reading/Viewing • MicrosoftCopilotStudioVulnerabilities:Explained(Zen-
+ity Labs) • MITRE ATLAS Investigation into OpenClaw Agent Com-
+promise (MITRE PDF) • AI with Aish: OpenClaw ExplAIned: Open-Source Con-
+trol Layer for Agents (blog post) • The Hidden Threat: How Indirect Prompt Injections Ex-
+ploit AI Agents and Why Concealment Matters (ARSA
+Technology) Optional Reading/Viewing
+Debeneddetti 2024: AgentDojo: A Dynamic Environ- ment to Evaluate Prompt Injection Attacks and De- fenses for LLM Agents
+	•	Andriushchenkoetal.,2024:AgentHarm:ABenchmark for Measuring Harmfulness of LLM Agents 
+	•	Chen et al., 2026: IterInject: Indirect Prompt Injection Against LLM Agents via Feedback-Guided Iterative Op- timization 
+￼ ￼ ￼ ￼
+Nov 4
+￼ ￼ ￼ ￼
+Nov 11
+￼ ￼ ￼
+￼
+MODULE 4: Defenses
+￼
+Nov 18
+Runtime Defenses • Architectural controls • Runtime guardrail layers
+Required Reading/Viewing • Andersen et al. 2025: AgentHarm: Benchmarking Ro-
+bustness of LLM Agents on Harmful Tasks.
+	•	Inan et al. 2024: Llama Guard 3: Vision and Text Safe-  guards for Human-AI Conversations. 
+	•	TrueFoundry Engineering 2026: Prompt Injection De-  fense at the AI Gateway. Optional Reading/Viewing  • Zhou et al. 2024: AutoDefense: Multi-Agent LLM De- fense against Jailbreak Attacks.  • Digital Applied 2026: LLM Guardrails: Production Safety Layers Reference.  Required Reading/Viewing • O’Brien et al. 2025: Deep Ignorance: Filtering Pretrain-  ing Data Builds Tamper-Resistant Safeguards. • OpenAI, 2022: DALL·E 2 pre-training mitigations • Yao et al. 2024: Large Language Model Unlearning • Birhane et al., 2023: On Hate Scaling Laws For Data-  Swamps • Eldan&Rusinovich,2023:Who’sHarryPotter?Approx-  imate Unlearning for LLMs • Bai et al., 2022: Training a Helpful and Harmless As-  sistant with Reinforcement Learning from Human Feed-  back • Tice et al., 2026: Alignment Pretraining: AI Discourse  Causes Self-Fulfilling (Mis)alignment Optional Reading/Viewing  • Guo et al. , 2026: LLMs Can Unlearn Refusal with Only 1,000 Benign Samples 
+	•	Qi et al. 2025: Safety Alignment Should be Made More Than Just a Few Tokens Deep. 
+	•	Cooper et al., 2024: Machine Unlearning Doesn’t Do What You Think: Lessons for Generative AI Policy 
+	•	Eldan&Li,2023:TinyStories:HowSmallCanLanguage Models Be and Still Speak Coherent English? 
+	•	Gunasekar et al., 2023: Textbooks Are All You Need 
+	•	Jian et al., 2024: Investigating Data Contamination for  Pre-training Language Models 
+	•	Liu et al., 2025: Language Models May Verbatim Com-  plete Text They Were Not Explicitly Trained On 
+	•	Schaeffer et al., 2025: Position: Model Collapse Does  Not Mean What You Think 
+￼ ￼ ￼ ￼
+Nov 25
+Offline Defenses • Alignment • Pre-training mitigations • LLM Unlearning • Refusal training
+Final project proposal due
+￼ ￼ ￼ ￼ ￼
+￼
+Dec 2
+AI Supervision & Governance • ScalableAIoversight&governance • AIriskframeworks • Benchmarking AGI • AI deception prevention
+Assignment 5 Due
+Required Reading/Viewing • Irving&Amodei,2018:AISafetyviaDebate(Blogpost) • Burnsetal.,2023:Weak-to-stronggeneralization(Blog
+post) • Bengio et al., 2024: Managing extreme AI risks amid
+rapid progress • Ngo et al., 2024: The Alignment Problem from a Deep
+Learning Perspective: A Position Paper Optional Reading/Viewing
+• Kasirzadeh, 2023: Two Types of AI Existential Risk: De- cisive and Accumulative
+	•	Alexander,2022:BiologicalAnchors:ATrickThatMight Or Might Not Work 
+	•	Bowman et al., 2022: Measuring Progress on Scalable Oversight for Large Language Models 
+	•	Hendrycks et al., 2023: An Overview of Catastrophic AI Risks 
+	•	Morris et al., 2024: Position: Levels of AGI for Opera- tionalizing Progress on the Path to AGI 
+	•	ELK Summary (Hobbhahn, 2022: Full report) 
+￼ ￼ ￼ ￼ ￼
+Dec 9
+￼
+Final presentations
+
